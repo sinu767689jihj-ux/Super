@@ -1,0 +1,22 @@
+class Srinu {
+    int a = 10;
+    Srinu() {
+        System.out.println("It is a Superclass:");
+    }
+}
+
+class Raja extends Srinu {
+    int a = 20;
+
+    Raja() {
+        super();
+        System.out.println("It is a Subclass variable: " + a);
+        System.out.println("It is a Superclass variable: " + super.a);
+    }
+}
+
+public class SuperDemo {
+    public static void main(String[] args) {
+        Raja b = new Raja();
+    }
+}
